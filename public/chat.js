@@ -6,8 +6,16 @@ import {
     signOut
 } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 import {GoogleGenerativeAI} from "https://esm.run/@google/generative-ai";
-import API_KEY from "./apikey.js";
-import firebaseConfig from "./firebase.js";
+const API_KEY = "AIzaSyD35o10E_qSFCpOgwwAAru3UqBjOjoYNEk";
+const firebaseConfig = {
+    apiKey: "AIzaSyCmDQO5i940Lnh0KtRbjkuoRj1GFAZ80oI",
+    authDomain: "chat-c17d6.firebaseapp.com",
+    projectId: "chat-c17d6",
+    storageBucket: "chat-c17d6.appspot.com",
+    messagingSenderId: "590425564864",
+    appId: "1:590425564864:web:ca2104b170fa49a4c7af25",
+    measurementId: "G-T5KGJ89DJY"
+};
 
 const genAI = new GoogleGenerativeAI(API_KEY);
 // const model = genAI.getGenerativeModel({ model: "gemini-pro"});
